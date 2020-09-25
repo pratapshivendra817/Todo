@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dsg.css">
+</head>
+<body>
+    
+    <main class="container">
+        <div class="qp">
+            <i class="fas fa-clipboard-list mg-10 fs-large"></i>
+            <input type="text" id="new-task" placeholder="Type your todo list">
+            <ion-icon id="add-button" name="add-circle-outline" class="mg-10 fs-large"></ion-icon>
+        </div>
+        <div class="mm">
+            <div id="check-all-button">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <p id = "completeAll" class="list" >Complete All tasks</p>
+            </div>
+            <p id = "clearComplete" class="list">Clear Completed</p>
+        </div>
+        <hr>
+        <div id = "show-all" class="tc">
+            <div class="task-card not-started" id="t1">
+                <div class="sn"></div>
+                <p class="tt">Running</p>
+                <p class="ts color-white"></p>
+                <ion-icon class="delete fs-large mg-10" name="close-circle-outline" ></ion-icon>
+            </div>
+            <div class="task-card not-started" id="t2">
+                    <div class="sn"></div>
+                    <p class="tt">Drink water</p>
+                    <p class="ts color-white"></p>
+                    <ion-icon class="delete fs-large mg-10" name="close-circle-outline"></ion-icon>
+            </div>
+            <div class="task-card Completed" id="t3">
+                    <div class="sn"></div>
+                    <p class="tt">Take a breakfast.</p>
+                    <p class="ts color-white"></p>
+                    <ion-icon class="delete fs-large mg-10" name="close-circle-outline"></ion-icon>
+            </div>
+            <div class="task-card In-progress" id="t4">
+                    <div class="sn"></div>
+                    <p class="tt">listen to music</p>
+                    <p class="ts color-white"></p>
+                    <ion-icon class="delete fs-large mg-10" name="close-circle-outline"></ion-icon>
+            </div>
+            <div class="task-card In-progress" id="t5">
+                    <div class="sn"></div>
+                    <p class="tt">Upload project</p>
+                    <p class="ts color-white"></p>
+                    <ion-icon class="delete fs-large mg-10" name="close-circle-outline"></ion-icon>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="pp">
+            <div class="xx">
+                <p id="task-left-count" class="fs-med bold">3 </p>&nbsp
+                <p class="list">github</p>
+            </div>
+            <div class="ss">
+                <p id = 'showAll' class="ff-button">All</p>
+                <p id='showInprogress' class="ff-button">Uncompleted</p>
+                <p id='showComplete' class="ff-button">Completed</p>
+                
+               
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="click.js"></script>
+</body>
+</html>

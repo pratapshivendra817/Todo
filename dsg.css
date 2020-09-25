@@ -1,0 +1,147 @@
+* {
+    margin:0px;
+}
+body{
+    background-color: #192a56;
+}
+main{
+    background-color: #487eb0;
+    width:50vw;
+    margin:30px auto;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-family: sans-serif;
+    border-radius:10px;
+    box-shadow: 0px 0px 4px 4px red;
+}
+
+.qp{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color:white;
+    height:40px;
+    border-radius:5px;
+}
+#check-all-button{
+    cursor: pointer;
+}
+#new-task{
+    border:none;
+    background-color: inherit;
+    flex-grow:2;
+    padding:5px;
+    font-size: 1rem;
+    width:70%;
+}
+input:focus, textarea:focus, select:focus{
+    outline:none;
+}
+
+.mm{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    padding:5px 0;
+}
+#check-all-button{
+    display:flex;
+    align-items: center;
+}
+#clearComplete{
+    cursor: pointer;
+}
+.tc{
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.task-card{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0px;
+    align-items: center;
+    transition: transform 0.5s ease-out;
+}
+.delete{
+    align-self:auto;
+    visibility: hidden;
+}
+
+
+.delete-card{
+    transform:translateX(100%);
+}
+.sn{
+    border:1px solid black;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    margin:5px;
+}
+
+.Completed div{
+    background-color:black;
+}
+.In-progress div{
+    background-color:black;
+}
+
+.tt{
+    /* flex-grow:2; */
+    width: 50%;
+}
+.ts{
+    margin:auto;
+    font-size:0.7rem;
+    /* color:#fc5753; */
+    font-family: monospace;
+}
+.pp{
+    display:flex;
+    justify-content: space-between;
+    margin:5px 0;
+}
+.xx{
+    display:flex;
+    
+}
+
+.ss{
+    display: flex;
+    justify-content: space-between;
+    font-size:0.8rem;
+    color:black;
+    /* letter-spacing: 0.0001rem;     */
+}
+.ff-button{
+    margin:0 4px;
+    cursor: pointer;
+}
+/*Other classes*/
+.mg-10{
+    margin:10px;
+}
+.fs-xlarge{
+    font-size:1.5rem;
+}
+.fs-large{
+    font-size:1.2rem;
+}
+.list{
+font-size: 0.7rem;
+
+}
+
+.bold{
+    font-weight: 600;
+}
+@media screen and (max-width:700px){
+	main{
+        width:80vw;
+    }
+}
